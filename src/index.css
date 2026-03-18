@@ -1,0 +1,23 @@
+:root {
+  /*Light*/
+  --color-background: #ffffff;
+  --color-text: #121212;
+  --color-surface: #f5f5f5;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+html[data-theme="dark"] {
+  /*Dark*/
+  --color-background: #121212;
+  --color-text: #ffffff;
+  --color-surface: #181818;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--sans);
+}
