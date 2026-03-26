@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '/music-search/src/pages/home.tsx'
+import Home from '/music-search/src/pages/Home.tsx'
 import './App.css'
 
 function App() {
