@@ -1,0 +1,112 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.followers {
+  opacity: 0.7;
+  margin: 4px 0 0;
+}
+
+.popularityBar {
+  margin-bottom: 32px;
+}
+
+.barBg {
+  background: #333;
+  height: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.barFill {
+  background: #1db954;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+/* Carrossel — idêntico ao da Home */
+.carousel {
+  width: 100%;
+  margin-top: 16px;
+  position: relative;
+}
+
+.viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.track > * {
+  flex: 0 0 220px;
+  width: 220px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.controls button {
+  background: #1f2937;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.controls button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media (max-width: 880px) {
+  .track > * {
+    flex: 0 0 180px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 540px) {
+  .page {
+    padding: 24px 16px;
+  }
+
+  .track > * {
+    flex: 0 0 66vw;
+    width: 66vw;
+  }
+}
