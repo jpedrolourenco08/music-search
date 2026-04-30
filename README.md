@@ -193,6 +193,12 @@ The application follows a **unidirectional data flow** pattern with a clear sepa
 
 ---
 
+## Prints
+![alt text](image.png)
+![alt text](image-3.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
 ## 🔀 Version Control
 
 This project was developed using **Git** for version control.
