@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import type { FormEvent } from 'react'
 import { Search } from 'lucide-react'
 import './SearchBar.css'
 
@@ -9,7 +10,7 @@ interface Props {
 export default function SearchBar({ onSearch }: Props) {
   const [query, setQuery] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     if (!query) return
     onSearch(query)
