@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
-import SearchBar from '../../components/SearchBar.tsx'
-import MusicCard from '../../components/MusicCard.tsx'
-import { searchTracks } from '../../services/spotifyService.ts'
-import type { Track } from '../../types/Track.ts'
+import SearchBar from '../../components/SearchBar'
+import MusicCard from '../../components/MusicCard'
+import { searchTracks } from '../../services/spotifyService'
+import type { Track } from '../../types/Track'
 import style from './style.module.css'
 
 const CARD_WIDTH = 240
