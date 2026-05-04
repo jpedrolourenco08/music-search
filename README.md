@@ -16,7 +16,7 @@ A web application for searching songs and exploring artist profiles using the Sp
 
 ## 🌐 Online Application
 
-> 🔗 **Live Demo:** [https://your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)
+> 🔗 **Live Demo:** [https://music-search-lyart.vercel.app]
 
 ---
 
